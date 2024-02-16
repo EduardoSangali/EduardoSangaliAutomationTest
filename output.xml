@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2024-02-15T23:18:40.197872" rpa="false" schemaversion="5">
+<suite id="s1" name="Automation" source="/Users/mac/Desktop/TI/LENOVO/MotorolaAutomationTest/automation">
+<suite id="s1-s1" name="testCases" source="/Users/mac/Desktop/TI/LENOVO/MotorolaAutomationTest/automation/testCases">
+<suite id="s1-s1-s1" name="Tc1-Page-Information" source="/Users/mac/Desktop/TI/LENOVO/MotorolaAutomationTest/automation/testCases/tc1-page-information.robot">
+<kw name="openBrowse" owner="resources" type="SETUP">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-15T23:18:40.374354" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x10e4df290&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-15T23:18:40.373975" elapsed="0.000426"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2024-02-15T23:18:40.374573" elapsed="0.000167"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2024-02-15T23:18:40.374862" elapsed="0.000139"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-15T23:18:40.375446" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5050/interview'.</msg>
+<arg>${URl}</arg>
+<arg>${browse}</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-15T23:18:40.375156" elapsed="0.590778"/>
+</kw>
+<status status="PASS" start="2024-02-15T23:18:40.372449" elapsed="0.593952"/>
+</kw>
+<test id="s1-s1-s1-t1" name="JobValidation" line="10">
+<kw name="ambevExperienceTextValidation" owner="resources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-15T23:18:40.968904" level="INFO">Verifying element 'id:ambev-experience-title' contains exact text 'Senior Quality Analyst | AMBEV S.A. (BEES) | 03/2022 to 03/2023'.</msg>
+<arg>${ambevJobTitleId}</arg>
+<arg>Senior Quality Analyst | AMBEV S.A. (BEES) | 03/2022 to 03/2023</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-02-15T23:18:40.968177" elapsed="0.029335"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-15T23:18:40.998014" level="INFO">Verifying element 'id:ambev-experience-description' contains exact text 'I was responsible for the quality of one module of a mobile application, which was being implemented in several countries expanding the product. For these launches, I collaborated with the development of an automation of a mass data generator (Javascript within POSTMAN) that sped up tasks that would otherwise take hours or even days of work to a couple minutes, contributing greatly to the deadlines and quality in deliveries.'.</msg>
+<arg>${ambevJobDescriptionId}</arg>
+<arg>I was responsible for the quality of one module of a mobile application, which was being implemented in several countries expanding the product. For these launches, I collaborated with the development of an automation of a mass data generator (Javascript within POSTMAN) that sped up tasks that would otherwise take hours or even days of work to a couple minutes, contributing greatly to the deadlines and quality in deliveries.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-02-15T23:18:40.997731" elapsed="0.015981"/>
+</kw>
+<status status="PASS" start="2024-02-15T23:18:40.967718" elapsed="0.046121"/>
+</kw>
+<kw name="daitanExperienceTextValidation" owner="resources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-15T23:18:41.014826" level="INFO">Verifying element 'id:daitan-experience-title' contains exact text 'SDET (Software Development Engineer in Test) | Daitan | 10/2021 to 02/2022'.</msg>
+<arg>${daitanJobTitleId}</arg>
+<arg>SDET (Software Development Engineer in Test) | Daitan | 10/2021 to 02/2022</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.014397" elapsed="0.017152"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-15T23:18:41.032032" level="INFO">Verifying element 'id:daitan-experience-description' contains exact text 'I was responsible for test automation using Python, in addition to researching the best support framework for the solution in question. I was responsible for coding, executing, documenting and representing everything related to quality of the product. The solution was focused on data analysis (python, pandas, etc.) using Docker.'.</msg>
+<arg>${daitanJobDescriptionId}</arg>
+<arg>I was responsible for test automation using Python, in addition to researching the best support framework for the solution in question. I was responsible for coding, executing, documenting and representing everything related to quality of the product. The solution was focused on data analysis (python, pandas, etc.) using Docker.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.031761" elapsed="0.016732"/>
+</kw>
+<status status="PASS" start="2024-02-15T23:18:41.014109" elapsed="0.034508"/>
+</kw>
+<kw name="gftExperienceTextValidation" owner="resources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-15T23:18:41.049394" level="INFO">Verifying element 'id:gft-experience-title' contains exact text 'L2 Test Analyst | GFT | 03/2020 to 09/2021'.</msg>
+<arg>${gftJobTitleId}</arg>
+<arg>L2 Test Analyst | GFT | 03/2020 to 09/2021</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.049174" elapsed="0.016425"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-15T23:18:41.066056" level="INFO">Verifying element 'id:gft-experience-description' contains exact text 'I was responsible for understanding technical documentation focusing on creating the necessary test plan to better cover the functionality in question, creating, documenting and executing test cases (manual and automated) via interface and APIDue to the project I worked on being one of the pioneers in API automation at GFT, I developed text and video training so that employees allocated to projects that may need to automate API can perform this function as expected.'.</msg>
+<arg>${gftJobDescriptionId}</arg>
+<arg>I was responsible for understanding technical documentation focusing on creating the necessary test plan to better cover the functionality in question, creating, documenting and executing test cases (manual and automated) via interface and APIDue to the project I worked on being one of the pioneers in API automation at GFT, I developed text and video training so that employees allocated to projects that may need to automate API can perform this function as expected.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.065803" elapsed="0.016704"/>
+</kw>
+<status status="PASS" start="2024-02-15T23:18:41.048877" elapsed="0.033764"/>
+</kw>
+<kw name="fitExperienceTextValidation" owner="resources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-15T23:18:41.083419" level="INFO">Verifying element 'id:fit-experience-title' contains exact text 'Junior Tester | FIT Institute of Technology | 12/2018 to 03/2020'.</msg>
+<arg>${fitJobTitleId}</arg>
+<arg>Junior Tester | FIT Institute of Technology | 12/2018 to 03/2020</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.083197" elapsed="0.017722"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-15T23:18:41.101532" level="INFO">Verifying element 'id:fit-experience-description' contains exact text 'Test executor was my main role, but on occasion, I would work with the creation of test cases and, consequently, the creation of test plans, in addition to the creation of some automations.
+In 2019 I worked on a project in which I had the opportunity to go to Italy for regression testing with the QA team from Brazil and Italy, working together to finalize the product.
+Also in 2019 I had the opportunity to go to China on another project, for some workshops as both a conductor and a participant to spread knowledge and learn about testing and QA methodology, among the teams working in this area of the project.'.</msg>
+<arg>${fitJobDescriptionId}</arg>
+<arg>Test executor was my main role, but on occasion, I would work with the creation of test cases and, consequently, the creation of test plans, in addition to the creation of some automations.\nIn 2019 I worked on a project in which I had the opportunity to go to Italy for regression testing with the QA team from Brazil and Italy, working together to finalize the product.\nAlso in 2019 I had the opportunity to go to China on another project, for some workshops as both a conductor and a participant to spread knowledge and learn about testing and QA methodology, among the teams working in this area of the project.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.101228" elapsed="0.016902"/>
+</kw>
+<status status="PASS" start="2024-02-15T23:18:41.082896" elapsed="0.035364"/>
+</kw>
+<status status="PASS" start="2024-02-15T23:18:40.966751" elapsed="0.151735"/>
+</test>
+<kw name="closeBrowse" owner="resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.119688" elapsed="0.072804"/>
+</kw>
+<status status="PASS" start="2024-02-15T23:18:41.119384" elapsed="0.073239"/>
+</kw>
+<doc>A test suite to check if all job experiences are being displayed as expected</doc>
+<status status="PASS" start="2024-02-15T23:18:40.227020" elapsed="0.965666"/>
+</suite>
+<suite id="s1-s1-s2" name="Tc2-Wrong-Url" source="/Users/mac/Desktop/TI/LENOVO/MotorolaAutomationTest/automation/testCases/tc2-wrong-url.robot">
+<kw name="openBrowseWrongUrl" owner="resources" type="SETUP">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-15T23:18:41.198077" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x10e4f3a70&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.197650" elapsed="0.000472"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.198302" elapsed="0.000214"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.198673" elapsed="0.000182"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-15T23:18:41.199410" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5050'.</msg>
+<arg>${wrongUrl}</arg>
+<arg>${browse}</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.199046" elapsed="0.669270"/>
+</kw>
+<status status="PASS" start="2024-02-15T23:18:41.197305" elapsed="0.671337"/>
+</kw>
+<test id="s1-s1-s2-t1" name="WrongUrlValidation" line="10">
+<kw name="error404Validation" owner="resources">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-15T23:18:41.877050" level="INFO">Page title is '404 Not Found'.</msg>
+<arg>404 Not Found</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.870572" elapsed="0.006578"/>
+</kw>
+<status status="PASS" start="2024-02-15T23:18:41.870054" elapsed="0.007205"/>
+</kw>
+<status status="PASS" start="2024-02-15T23:18:41.868864" elapsed="0.008620"/>
+</test>
+<kw name="closeBrowse" owner="resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-15T23:18:41.878290" elapsed="0.070704"/>
+</kw>
+<status status="PASS" start="2024-02-15T23:18:41.878038" elapsed="0.071141"/>
+</kw>
+<doc>A test suite to check if the website will not open without the "/interview" route</doc>
+<status status="PASS" start="2024-02-15T23:18:41.193663" elapsed="0.755591"/>
+</suite>
+<status status="PASS" start="2024-02-15T23:18:40.225580" elapsed="1.724865"/>
+</suite>
+<status status="PASS" start="2024-02-15T23:18:40.204914" elapsed="1.746264"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Automation">Automation</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="testCases">Automation.testCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tc1-Page-Information">Automation.testCases.Tc1-Page-Information</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s2" name="Tc2-Wrong-Url">Automation.testCases.Tc2-Wrong-Url</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
